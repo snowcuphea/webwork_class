@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>hello 김민정!</h1>
+	<p> <i>안녕하세요</i><br/>
+	<b><font size = "1" color="pink" face = "궁서">김민정</font></b>입니다.
+	<hr/>
+	<hr/>
+	<img src ="http://127.0.0.1:8088/clientweb/images/cat1.PNG" >
+	
+	<h2>김민정</h2>
+
+</body>
+</html>
