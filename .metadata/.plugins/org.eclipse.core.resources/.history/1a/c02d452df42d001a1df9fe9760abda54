@@ -1,0 +1,21 @@
+@charset "EUC-KR";
+
+h1{
+	
+	color : #7cb6b9;
+}
+
+#beautiful{
+
+	background-color :#a7cece;
+	padding : 20px;
+	padding-left : 100px;
+	height : 80px;
+	font-style: italic;
+	margin : 30px;
+	
+	background-image :url("../../images/background.gif");
+	background-repeat: no-repeat;
+	
+}
+

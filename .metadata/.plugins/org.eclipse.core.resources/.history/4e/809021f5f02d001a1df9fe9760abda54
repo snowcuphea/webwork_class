@@ -1,0 +1,17 @@
+@charset "EUC-KR";
+
+h1{
+	
+	color : #a7cece;
+}
+
+#beautiful{
+	position:absolute; 
+		top:50px; 
+		left:100px;
+	background-color :#a7cece;
+	padding-top: 20px;
+	padding-bottom : 50px;
+	font-style: italic;
+	
+}

@@ -1,0 +1,11 @@
+@charset "EUC-KR";
+
+h1{
+	
+	color : #a7cece;
+}
+
+#beautiful{
+	
+	background-color :#a7cece;
+}
