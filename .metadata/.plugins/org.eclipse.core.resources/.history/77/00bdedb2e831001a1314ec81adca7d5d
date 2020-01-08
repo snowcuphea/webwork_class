@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function calc(){
+
+	total = price.tt.value * 0.9;
+	document.getElementById("result").innerHTML = total;
+
+}
+
+</script>
+</head>
+<body>
+
+<form name = "price">
+
+수량 : <input type = "text" name = "tt" onkeyup="calc()">
+<span id="result"></span>
+
+</form>
+
+</body>
+</html>

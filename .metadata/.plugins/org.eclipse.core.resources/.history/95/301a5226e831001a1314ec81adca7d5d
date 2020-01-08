@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function calc(){
+	
+	
+}
+
+</script>
+</head>
+<body>
+
+<form action="">
+
+수량 : <input type = "text" name = "test" onkeyup="calc()">
+
+</form>
+
+</body>
+</html>

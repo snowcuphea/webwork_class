@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [09/Jan/2020:22:29:04 +0900] "GET /clientweb/js_basic/js_date_exam.html HTTP/1.1" 200 806
+0:0:0:0:0:0:0:1 - - [09/Jan/2020:22:29:04 +0900] "GET /clientweb/images/jang5.jpg HTTP/1.1" 200 175454

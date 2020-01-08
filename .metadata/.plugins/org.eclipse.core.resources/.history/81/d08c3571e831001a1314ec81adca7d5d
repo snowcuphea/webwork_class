@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function calc(){
+	/*
+	myval=cbfmt.test.value;//getter
+		document.getElementById("result").innerHTML =
+			"<h1>"+myval+"</h1>"; 
+	*/
+	
+	
+	
+}
+
+</script>
+</head>
+<body>
+
+<form name = "price">
+
+수량 : <input type = "text" name = "tt" onkeyup="calc()">
+
+</form>
+
+</body>
+</html>

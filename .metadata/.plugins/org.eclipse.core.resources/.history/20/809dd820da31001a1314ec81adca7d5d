@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		
+		function getData(){
+			//팝업의 텍스트상자 = opener의 텍스트상자
+			document.mypopup.data.value = 
+				opener.document.myform.id.value
+				//오프너 윈도우의 다큐먼트에 있는 마이폼의 아이디에있는 value를 가져옴
+		}
+	
+	</script>
+</head>
+<body bgcolor="pink" onload="getData()">
+	<form name = "mypopup" action="search.jsp">
+		<input type = "text" name="data">
+		<input type = "button" value ="검색" />
+	</form>
+	<a href ="#">서초1동</a><br/>
+	<a href ="#">역삼동</a><br/>
+	<a href ="#">방배동</a><br/>
+	<a href ="#">구로동</a><br/>
+	<a href ="#">신림동</a><br/>
+	<a href ="#">봉천동</a><br/>
+	
+	
+
+</body>
+</html>
