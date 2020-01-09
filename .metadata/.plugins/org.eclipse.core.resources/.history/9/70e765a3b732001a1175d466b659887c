@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<!-- 페이지가 로딩될 때 각각의 버튼에 click이벤트를 연결 
+		- 표현식
+		- 
+	
+	
+	-->
+	
+</head>
+<body>
+	<form>
+		<input type="button" value="1번버튼"/>
+		<input type="button" value="2번버튼"/>
+		<input type="button" value="3번버튼"/>
+		<input type="button" value="4번버튼"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title> New Document </title>
+<script type="text/javascript">
+
+function button_click(what){
+	//alert("isNaN의 결과=>"+window.isNaN(myform.num1.value));
+	//만약 "10+10+50"넣으면 true다. 문자가 들어가서. 
+	//alert("eval의 결과=>"+eval(myform.num1.value)); //연산 값이 나온다. 
+	/*data = myform.num1.value;
+	alert("문자열의 길이=> " + data.length);
+	data2 = data.trim(); //입력된 문자열의 공백을 제거한다. 
+	alert("문자열의길이=>"+data2.length);*/
+	//if(isNaN(myform.mytext.value)){
+	//	int cal[] = 
+	//	
+	//}else{
+	//	
+	//}
+	
+	document.getElementById("result").innerHTML = what;
+	
+}
+function compute(){
+	
+	document.getElementById("result").innerHTML = eval(myform.mytext.value);
+
+}
+function clear_del(){
+	document.getElementById("result").innerHTML = "";
+	
+	
+}
+
+</script>
+</HEAD>
+<BODY>
+<br>
+<br>
+<br>
+
+<h1>계산기 활용 예</h1>
+<form name="myform">
+<table border="1">
+	<tr>
+		<td colspan="4"><input type="text" size="28" name="mytext" id="result"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   7   " onclick="button_click('7')"></td>
+		<td><input type="button" value="   8   " onclick="button_click('8')"></td>
+		<td><input type="button" value="   9   " onclick="button_click('9')"></td>
+		<td><input type="button" value="   /   " onclick="button_click('/')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   4   " onclick="button_click('4')"></td>
+		<td><input type="button" value="   5   " onclick="button_click('5')"></td>
+		<td><input type="button" value="   6   " onclick="button_click('6')"></td>
+		<td><input type="button" value="   *   " onclick="button_click('*')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   1   " onclick="button_click('1')"></td>
+		<td><input type="button" value="   2   " onclick="button_click('2')"></td>
+		<td><input type="button" value="   3   " onclick="button_click('3')"></td>
+		<td><input type="button" value="   -   " onclick="button_click('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   0   " onclick="button_click('0')"></td>
+		<td><input type="button" value="   .    " onclick="button_click('.')"></td>
+		<td><input type="button" value="   +   " onclick="button_click('+')"></td>
+		<td><input type="button" value="   %  " onclick="button_click('%')"></td>
+	</tr>
+	<tr>
+		<td  colspan="2"><input type="button" value="  계산하기  " onclick="compute()"></td>
+		<td  colspan="2"><input type="button" value="   지우기    " onclick="clear_del()"></td>
+	</tr>
+</table>
+</form>
+
+</BODY>
+</HTML>

@@ -34,15 +34,40 @@
 		//mypopup2.document.mypopup.data.value = 
 		//			myform.id.value;
 		//value가 왼쪽에있으면 setter, value가 오른쪽에있으면 getter 역할
+	}
+	
+	
+	function test_number1(){
+		num1 = window.parseInt(myform.num1.value); //value속성이 =의 오른쪽에 있으면 getter역할.
+		//num1의 value를 읽어와라 라는 뜻
 		
+		num2 = parseInt(myform.num2.value);//parseInt는 window 객체라 window 굳이 안써줘도 된다. 
+		myform.result.value = num1+num2;//value속성이 =의 왼쪽에있으면 setter역할.
+		//num1, num2 더한 값을 result에 세팅해라 라는 뜻
 		
 	}
+	
+	function test_number2(){ 
+		//"Is not a number? 숫자가 아니니?" 숫자 아닌게 True. window는 생략해도 된다. 
+		//alert("isNaN의 결과=>"+window.isNaN(myform.num1.value));
+		//만약 "10+10+50"넣으면 true다. 문자가 들어가서. 
+		//alert("eval의 결과=>"+eval(myform.num1.value)); //연산 값이 나온다. 
+		data = myform.num1.value;
+		alert("문자열의 길이=> " + data.length);
+		data2 = data.trim(); //입력된 문자열의 공백을 제거한다. 
+		alert("문자열의길이=>"+data2.length);
+		
+	}
+	
+	
+	
 	</script>
 </head>
 <body>
 	<button onClick="window.alert('경고창')">경고창</button>
 	<button onClick="testConfirm()">확인창</button>
-	<button onClick="test_number()">숫자처리메서드</button>
+	<button onClick="test_number1()">숫자처리메서드</button>
+	<button onClick="test_number2()">숫자처리메서드2</button>
 	<button onClick="window.close()">닫기</button>
 	
 	<form action="" name="myform">
@@ -50,13 +75,19 @@
 		<input type="button" value="아이디 체크" onClick="idcheck()">
 		<br>
 	
-		우편번호 : <input type="text" name="zipcode"	>
+		우편번호 : <input type="text" name="zipcode">
 		<input type="button" value="SEARCH ADDRESS"
 		onClick="searchAddress()">
 		<br>
 		
 		상세주소 : <input type="text" name="address"><br>
 		<input type="submit" value="SEND">
+		<br>
+		
+		num1 : <input type="text" name="num1"><br>
+		num2 : <input type="text" name="num2"><br>
+		결과 : <input type="text" name="result"><br>
 	</form>
 </body>
+
 </html>

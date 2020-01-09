@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		myfunc = function test(num){//표현식의 형태로 정의된 함수
+			
+			
+		}
+	
+	
+	
+	</script>
+
+</body>
+</html>
