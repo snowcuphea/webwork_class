@@ -3,6 +3,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
 <title>Insert title here</title>
+
+<script type="text/javascript">
+	window.onload = function(){
+		document.getElementById("imginsert").onclick = function(){
+			//img노드를 작성 - 태그노드(createElement메소드를 이용)
+			// 1. 삽입될 노드 생성
+			mynewNode = document.createElement("img");
+			mynewNode.setAttribute("src", "../images/m_garden02.jpg");
+			
+			mynewNode.setAttribute("style",
+					"border:solid 1px blue;width:250px");
+			
+			// 2. targetNode구하기
+			target = document.getElementById("domtestbtn");
+			
+			// 3. 추가하기
+			target.appendChild(mynewNode);
+		}
+		
+	}
+
+</script>
 </head>
 <body>
 	<div id="main">
@@ -18,7 +40,6 @@
 					 name="btn" id="btninsert" />
 				<input type="button" value="이미지노드삽입하기"
 					 name="btn" id="imginsert" />
-					 
 				<input type="button" value="특정노드전에 삽입하기"
 					 name="btn" id="btninsertbefore" />
 				<input type="button" value="특정노드삭제하기"

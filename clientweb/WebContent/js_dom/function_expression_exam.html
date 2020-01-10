@@ -14,23 +14,27 @@
 	<script type="text/javascript">
 	
 	window.onload = function(){
+		// 이 익명함수에다가
+		//버튼 네개에 대한 기능을 만든다!
+		
 	
 		document.getElementById("btn1").onclick = function(){ 
-			alert("btntest!");
+			alert("1번 btntest!");
 		};
 		document.getElementById("btn2").onclick = function(){ 
-			alert("btntest?");
+			alert("2번 btntest?");
 		};
 		document.getElementById("btn3").onclick = function(){ 
-			alert("btntest~");
+			alert("3번 btntest~");
 		};
 	
 		document.getElementById("btn4").onclick = btntest;
+		//4번은 callback함수. 함수명을 일단 써준다. 
 
 	}
 
 	function btntest(){
-		alert("btntest....");
+		alert("4번 btntest....");
 		
 	}
 	
@@ -40,6 +44,7 @@
 <body>
 	
 	<form>
+	<!-- id는 식별하는 값이기때문에, 반드시 하나여야 하며 중복되면 안된다.  -->
 		<input type="button" id="btn1" value="1번버튼"/>
 		<input type="button" id="btn2" value="2번버튼"/>
 		<input type="button" id="btn3" value="3번버튼"/>

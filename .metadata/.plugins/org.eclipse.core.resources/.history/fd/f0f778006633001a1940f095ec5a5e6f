@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function insertP() {
+		document.getElementById("insertbtn").onclick = function() {
+			newpNode = document.createElement("p");
+			newpNode.setAttribute("style", "background: pink");
+			plustextNode = document.createTextNode("newP");
+			newpNode.appendChild(plustextNode);
+
+			// 2. 삽입될 상위 노드
+			targetNode = document.getElementById("root");
+
+			// 3. target노드에 새롭게 생성한 노드를 추가 -하위노드로 추가
+			targetNode.appendChild(newpNode);
+		}
+	}
+	function deleteP() {
+			document.getElementById("deletebtn").onclick = function() {
+			targetNode = document.getElementById("root");
+			deleteNode = targetNode.lastChild;
+
+			targetNode.removeChild(deleteNode);
+		}
+	}
+	
+	function deleteDivAndP() {
+		document.getElementById("deleteallbtn").onclick = function() {
+		targetNode = document.getElementById("root");
+		deleteNode = targetNode;
+		targetNode.removeChild(deleteNode);
+	}
+}
+</script>
+</head>
+<body>
+	<div id="layer"></div>
+
+	<hr>
+
+	<div id="root">
+		<p style="background: gray;">line01</p>
+		<p style="background: skyblue">line02</p>
+		<p style="background: green;">line03</p>
+		<p style="background: red;">line04</p>
+	</div>
+
+	<hr>
+	<button id="insertbtn" onclick="insertP()">P태그추가하기</button>
+	<button id="deletebtn" onclick="deleteP()">P태그삭제하기</button>
+	<button id="deleteallbtn" onclick="deleteDivAndP()">div안의 모든
+		p태그 삭제하기</button>
+	<button id="innerbtn" onclick="innerHTML_test()">innerHTML</button>
+
+
+</body>
+</html>
