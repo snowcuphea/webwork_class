@@ -66,10 +66,31 @@
 	<a href="#" target="_self">하이퍼링크2</a>
 	<a href="#" target="_blank">하이퍼링크3</a>
 	<a href="#" target="_self">하이퍼링크4</a>
-	<script type="text/javascript" src="../common/js/jquery-1.12.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			
+			$("#ultag").on("click", function() {
+				$("ul li:first").css("color","red");
+			});
+			/* $("#ulAll").on("click", function() { //ulAll을 누르면 ul의 첫번째 요소들을 blue로 하겠다.
+				$("ul:first_child").css("color","blue");	
+			}); */
+			$("#href").on("click", function() { //href를 누르면 href속성을 갖고 있는 모든 구성요소의 color를 skyblue로 하겠다.
+				$("[href]").css("color","skyblue");	
+			});
+			$("#attrVal").on("click", function() {
+				/* $("[target='_blank']").css("color","yellow");  target이 _blank인 것만 변경하겠다.*/
+				$("a[target!='_blank']").css("color","pink"); // a 태그중 target이 _blank가 아닌것을 핑크로 변경.
+			});
+			$("#inputbutton").on("click", function() {//타입이 버튼인것들을 변경
+				$(":button").css("color","red");
+			});
+			$("#treven").on("click", function() { //0부터 들어감.
+				$("tr:even").css("background-color","blue");
+			});
+			$("#trodd").on("click", function() { //0부터 들어감.
+				$("tr:odd").css("background-color","yellow");
+			});
 		});
 	</script>
 </body>
