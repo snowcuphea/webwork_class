@@ -5,6 +5,7 @@
 <title>Insert title here</title>
 <style type="text/css">
 #pagelist {
+	position : absolute;
 	list-style: none;
 	float: left;
 	display: inline;
@@ -116,16 +117,16 @@
 			<li><a href="#">▶</a></li>
 		</ul>
 	</div>
-	<div>
-		<div>
+	<div id="searchdiv">
+		
 			<form id="search">
 				<select name="searchhow">
 					<option value="searchtitle">제목</option>
 					<option value="searchcontent">본문</option>
-				</select> <input type="text" id="searchtext" value=""> <input
-					type="button" id="serachbutton" value="검색">
+				</select> <input type="text" id="searchtext" value="">
+				<input type="button" id="serachbutton" value="검색">
 			</form>
-		</div>
+		
 	</div>
 
 

@@ -7,4 +7,10 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="basic.CalcLogic"/>
+<fullyQualifiedTypeName name="dept.DeptDAO"/>
+<fullyQualifiedTypeName name="fw.DBUtil"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="dept.DeptDTO"/>
 </qualifiedTypeNameHistroy>
