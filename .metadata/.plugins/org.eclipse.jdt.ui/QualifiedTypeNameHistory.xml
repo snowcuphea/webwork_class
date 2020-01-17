@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="fw.DBUtil"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="dept.DeptDTO"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

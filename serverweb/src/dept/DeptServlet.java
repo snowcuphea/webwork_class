@@ -3,6 +3,7 @@ package dept;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +16,7 @@ public class DeptServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("euc-kr");
 		response.setContentType("text/html;charset=euc-kr");
 		System.out.println("실행완료");
 
@@ -32,13 +34,17 @@ public class DeptServlet extends HttpServlet {
 		System.out.println("전화번호: " + tel);
 		System.out.println("관리자: " + mgr);
 		
+		//2. 비즈니스 메소드 call
 		DeptDTO deptt = new DeptDTO(deptNo, deptName, loc, tel, mgr);
 		DeptDAO dao = new DeptDAO();
 		int result = dao.insert(deptt);
 		
-		pw.print("<h1>삽입성공</h1>");
-		pw.print("<hr/>");
-		pw.print("<h3>"+result+"개 행 삽입 성공");
+		request.setAttribute("myresult", result);		
+	
+		//new 3.응답화면으로 요청재지정. 공유할 꺼라서 sendRedirect하면 안되고 RequestDispatcher해야함
+		RequestDispatcher rd = request.getRequestDispatcher("/dept/dept_insertResult.jsp");
+		rd.forward(request, response);
+		
 		
 		
 		
